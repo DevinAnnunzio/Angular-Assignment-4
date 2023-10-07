@@ -18,4 +18,5 @@
 <br>
 <hr>
 
-<app-game-control-component></app-game-control-component>
+<app-game-control-component (countEvent)="handleEvent($event)"></app-game-control-component>
+<h4>{{eventEmittedFromGame}}</h4>

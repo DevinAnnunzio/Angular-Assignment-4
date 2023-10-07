@@ -7,4 +7,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'basics-assignment-4';
+  eventEmittedFromGame: string = ''
+
+
+  handleEvent(event: string){
+    this.eventEmittedFromGame = event
+  }
 }
