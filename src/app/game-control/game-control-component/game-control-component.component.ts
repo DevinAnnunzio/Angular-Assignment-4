@@ -1,4 +1,4 @@
-import { Component, EventEmitter, Output } from '@angular/core';
+import { Component, EventEmitter, Output, ViewChild } from '@angular/core';
 
 @Component({
   selector: 'app-game-control-component',
@@ -7,6 +7,13 @@ import { Component, EventEmitter, Output } from '@angular/core';
 })
 export class GameControlComponentComponent {
   @Output() countEvent = new EventEmitter<string>();
+
+  //Testing to see if I can retrieve child components
+  // @ViewChild()
+
+
+
+
   
   intervalId: any
   numberTracker: number = 0

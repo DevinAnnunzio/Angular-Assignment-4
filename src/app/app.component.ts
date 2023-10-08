@@ -10,6 +10,8 @@ export class AppComponent {
   eventEmittedFromGame: string = ''
 
 
+
+
   handleEvent(event: string){
     this.eventEmittedFromGame = event
   }
