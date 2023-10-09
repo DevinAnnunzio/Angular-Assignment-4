@@ -19,4 +19,8 @@
 <hr>
 
 <app-game-control-component (countEvent)="handleEvent($event)"></app-game-control-component>
-<h4>{{eventEmittedFromGame}}</h4>
+<br>
+<h4>Event being emitted here: {{eventEmittedFromGame}}</h4>
+<hr>
+<app-even-component *ngFor="let evenNum of evenNumbers" [evenEvent]="evenNum"></app-even-component>
+<app-odd-component *ngFor="let oddNum of oddNumbers" [oddEvent]="oddNum"></app-odd-component>

@@ -7,12 +7,19 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'basics-assignment-4';
-  eventEmittedFromGame: string = ''
+  eventEmittedFromGame: number = 0
+  evenNumbers: number[] = []
+  oddNumbers: number[] = []
 
 
 
 
-  handleEvent(event: string){
+  handleEvent(event: number){
     this.eventEmittedFromGame = event
+    if(event % 2 === 0){
+      this.evenNumbers.push(event)
+    } else{
+      this.oddNumbers.push(event)
+    }
   }
 }
